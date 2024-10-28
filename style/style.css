@@ -1,24 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-    width: 0 max;
-}
+
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-  }
-
-.nav-hading{
-    color: #E6533C;
 }
+
+.all {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 55px 32px 190px;
+}
+
+.nav-hading {
+    color: #E6533C;
+    font-weight: 800;
+    font-size: 36px;
+}
+
 .background-color {
     visibility: hidden;
     background: rgb(185, 185, 185);
 }
 
-.nav-color{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+.nav-color {
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%); */
+    background: linear-gradient(180.00deg, rgb(8, 8, 8), rgba(14, 13, 13, 0.863), rgb(17, 17, 17) 100%);
+    /* background: rgb(5, 5, 5); */
 }
 
 .navbar {
@@ -29,15 +41,162 @@
 
 .navbar>ul {
     display: flex;
+    gap: 75px;
 
+}
+
+#list-item-bg {
+    background-color: #E6533C;
+    padding: 8px 20px 8px 20px;
+    border-radius: 46px;
 }
 
 .navbar>ul>li {
 
     list-style: none;
+
 }
 
 .list-item a {
     text-decoration: none;
-    margin-right: 10px;
+    color: #FFFFFF;
+
+}
+
+.menu-btn {
+    width: 35px;
+    height: 43px;
+    color: #FFFFFF;
+
+    display: none;
+}
+
+/* banner section */
+
+.banner {
+    display: flex;
+    gap: 55px;
+}
+
+.banner-head {
+    color: rgb(255, 255, 255);
+
+}
+
+.italic {
+    font-weight: 200;
+    text-indent: 100px;
+}
+
+.banner-text {
+    width: 46%;
+    
+
+}
+
+.banner-head {
+    font-weight: 90px;
+    font-size: 78px;
+}
+
+.common-describtion-color {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.common-btn {
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    color: #FFFFFF;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin-right: 15px;
+}
+
+.Join-btn {
+    border-radius: 42px;
+    color: #FFFFFF;
+    padding: 16px 40px 16px 40px;
+    border: 1px solid green;
+}
+
+.person {
+    width: 48%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.image {
+    /* */
+    /*  */
+
+    width: 349px;
+    height: 580px;
+    background-image: url('../images/Images2.png');
+}
+
+.image img {
+    width: 349px;
+    height: 580px;
+    position: relative;
+}
+
+.work-out {
+    width: 190px;
+    position: absolute ;
+    height: 95pcx;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 200px;
+    line-height: 20px;
+    margin-top: 100px;
+    border-radius: 12px;
+}
+
+.work-out-500 {
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 40px;
+}
+.view{
+    width: 190px;
+    position: absolute ;
+    height: 95pcx;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 20px;
+    margin-top: 400px;
+    margin-left: -100px;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .navbar>ul {
+        display: none;
+
+    }
+
+    .menu-btn {
+        display: unset;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .person , .banner-text{
+        width: 100%;
+    }
+    .view{
+        margin-left: 0px;
+    }
+
 }
