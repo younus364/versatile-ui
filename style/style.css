@@ -23,14 +23,15 @@ nav {
 }
 
 .background-color {
-    visibility: hidden;
+    
     background: rgb(185, 185, 185);
 }
 
+
 .nav-color {
-    /* background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%); */
+    
     background: linear-gradient(180.00deg, rgb(8, 8, 8), rgba(14, 13, 13, 0.863), rgb(17, 17, 17) 100%);
-    /* background: rgb(5, 5, 5); */
+  
 }
 
 .navbar {
@@ -56,7 +57,9 @@ nav {
     list-style: none;
 
 }
-
+#menu{
+    background-color: #FFFFFF;
+}
 .list-item a {
     text-decoration: none;
     color: #FFFFFF;
@@ -67,6 +70,7 @@ nav {
     width: 35px;
     height: 43px;
     color: #FFFFFF;
+   
 
     display: none;
 }
@@ -90,12 +94,12 @@ nav {
 
 .banner-text {
     width: 46%;
-    
+
 
 }
 
 .banner-head {
-    font-weight: 90px;
+    font-weight: 900px;
     font-size: 78px;
 }
 
@@ -117,8 +121,9 @@ nav {
 .Join-btn {
     border-radius: 42px;
     color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
     padding: 16px 40px 16px 40px;
-    border: 1px solid green;
+    border: 1px solid white;
 }
 
 .person {
@@ -135,6 +140,7 @@ nav {
     width: 349px;
     height: 580px;
     background-image: url('../images/Images2.png');
+    background-repeat: no-repeat;
 }
 
 .image img {
@@ -145,7 +151,7 @@ nav {
 
 .work-out {
     width: 190px;
-    position: absolute ;
+    position: absolute;
     height: 95pcx;
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
@@ -155,16 +161,18 @@ nav {
     border-radius: 12px;
 }
 
-.work-out-500 {
+.work-out-500,.view-350 {
     margin-bottom: 5px;
     font-weight: 900;
     font-size: 40px;
 }
-.view{
+
+.view {
     width: 190px;
-    position: absolute ;
+    position: absolute;
     height: 95pcx;
     color: #FFFFFF;
+    line-height: 15.12px;
     background-color: rgba(255, 255, 255, 0.1);
     line-height: 20px;
     margin-top: 400px;
@@ -172,6 +180,43 @@ nav {
     border-radius: 12px;
 }
 
+/* main section */
+.bg-color {
+    background-color: black;
+}
+
+.habit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+}
+.habit-box{
+  width: 40%;
+  margin-top: -100px;
+  
+}
+.change-habits {
+    font-weight: 900;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+/* fitness section */
+.fitness-section{
+    display: grid;
+    gap: 40px;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fitness>img{
+    border-radius: 50%;
+    border: solid 5px rgba(255, 255, 255, 0.397);
+}
+.fitness-heading{
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
 
 
 
@@ -189,14 +234,57 @@ nav {
     .menu-btn {
         display: unset;
     }
-    .banner{
+
+    .banner {
         flex-direction: column;
     }
-    .person , .banner-text{
+
+    .person, 
+    .banner-text, .habit-box {
         width: 100%;
     }
-    .view{
-        margin-left: 0px;
+   
+    .banner-head {
+        font-size: 36px;
     }
+
+    .common-btn,
+    .Join-btn {
+        padding: 10px 20px 10px 20px;
+
+
+    }
+
+    .image {
+        width: 100%;
+    }
+    .work-out{
+        width: 136px;
+        margin-left: 195px;
+    }
+    .view{
+        width: 136px;
+        line-height: 20px;
+        margin-left: -20px;
+    }
+    .later{
+        letter-spacing: 0.56px;
+        font-size: 9.83px;
+    }
+    .work-out-500,
+    .view-350 {
+        font-size: 25px;
+        
+    }
+    .fitness-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .common-describtion-color{
+        margin: 30px;
+    }
+    
+
+
+
 
 }
