@@ -297,19 +297,20 @@
 }
 
 .tranning-img {
-   display:flex;
-   
+    display: flex;
+
 
 }
+
 .tranning-img2 {
     display: flex;
- 
- } 
+
+}
 
 .img1 {
     width: 25%;
     height: 250px;
-    background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)), url('../images/exercise1.jpg');
+    background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url('../images/exercise1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -317,50 +318,120 @@
 .img2 {
     width: 45%;
     height: 250px;
-    background: linear-gradient(rgba(255, 0, 0, 0.3),rgba(255, 0, 0, 0.3)), url('../images/exercise2.png');
+    background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), url('../images/exercise2.png');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
+
+
 }
 
 .img3 {
     width: 30%;
     height: 250px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/exercise3.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    
-   
+
+
 }
 
 .img4 {
     width: 40%;
     height: 250px;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise4.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise4.png');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
+
+
 }
 
 .img5 {
     width: 25%;
     height: 250px;
-    background: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3)),  url('../images/exercise5.jpg');
+    background: linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url('../images/exercise5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 .img6 {
     width: 35%;
     height: 250px;
-    background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)), url('../images/exercise6.jpg');
+    background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)), url('../images/exercise6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
 }
+
+.table {
+    display: flex;
+    justify-items: center;
+}
+
+.table>div>table {
+    color: #FFFFFF;
+    border-collapse: collapse;
+
+    width: 350px;
+    height: 216px;
+}
+
+th,
+td {
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+th {
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.table-head {
+    font-size: 28px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.table1 {
+    width: 50%;
+}
+
+.input1 {
+    width: 50%;
+}
+
+.input-section {
+    align-items: center;
+}
+
+.input-section>input {
+    width: 282.5px;
+    height: 48px;
+    
+    
+   padding-left: 10px;
+    /* padding: 12px 60px 12px 20px; */
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.activity-input {
+    width: 584px;
+    height: 48px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
 
 
 
@@ -479,46 +550,63 @@
         justify-content: center;
     }
 
-    .run-img img {
+    .run-img img,.input1,.table1 {
         width: 100%;
     }
+
     /* Trainings and Exercises */
-    .tranning{
+    .tranning {
         margin-top: 50px;
     }
-    .tranning-head{
+
+    .tranning-head {
         font-size: 32px;
         line-height: 120%;
     }
+
     .img1 {
         width: 50%;
         height: 140px;
-        
+
     }
-    
+
     .img2 {
         width: 50%;
         height: 140px;
-       
+
     }
 
     .img4 {
         width: 45%;
         height: 140px;
-        
+
     }
-    
+
     .img5 {
         width: 55%;
         height: 140px;
     }
 
-    .img3{
+    .img3 {
         display: none;
 
     }
-    .img6{
+
+    .img6 {
         display: none;
+    }
+    /* table section */
+    .table{
+        flex-direction: column;
+    }
+    .input-section>input{
+        width: 150px;
+        height: 40px;
+        border: none;
+    }
+    .activity-input {
+        width: 311px;
+        height: 40px;
     }
 
 
