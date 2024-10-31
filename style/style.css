@@ -12,8 +12,11 @@
     margin: 0 auto;
 }
 
-nav {
-    margin: 55px 32px 190px;
+.banner-box {
+    /* margin: 55px 32px 190px; */
+    display: flex;
+    justify-content: center;
+
 }
 
 .nav-hading {
@@ -23,15 +26,15 @@ nav {
 }
 
 .background-color {
-    
+
     background: rgb(185, 185, 185);
 }
 
 
 .nav-color {
-    
+
     background: linear-gradient(180.00deg, rgb(8, 8, 8), rgba(14, 13, 13, 0.863), rgb(17, 17, 17) 100%);
-  
+
 }
 
 .navbar {
@@ -57,9 +60,11 @@ nav {
     list-style: none;
 
 }
-#menu{
+
+#menu {
     background-color: #FFFFFF;
 }
+
 .list-item a {
     text-decoration: none;
     color: #FFFFFF;
@@ -70,7 +75,7 @@ nav {
     width: 35px;
     height: 43px;
     color: #FFFFFF;
-   
+
 
     display: none;
 }
@@ -85,6 +90,7 @@ nav {
 .banner-head {
     color: rgb(255, 255, 255);
 
+
 }
 
 .italic {
@@ -94,6 +100,8 @@ nav {
 
 .banner-text {
     width: 46%;
+    display: flex;
+    justify-content: center;
 
 
 }
@@ -107,6 +115,10 @@ nav {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     margin-bottom: 40px;
+}
+
+.btn-section {
+    margin-top: 25px;
 }
 
 .common-btn {
@@ -161,7 +173,8 @@ nav {
     border-radius: 12px;
 }
 
-.work-out-500,.view-350 {
+.work-out-500,
+.view-350 {
     margin-bottom: 5px;
     font-weight: 900;
     font-size: 40px;
@@ -189,34 +202,166 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-   
+
 }
-.habit-box{
-  width: 40%;
-  margin-top: -100px;
-  
+
+.habit-box {
+    width: 40%;
+    margin-top: 100px;
+
 }
+
 .change-habits {
     font-weight: 900;
     font-size: 48px;
     color: #FFFFFF;
 }
+
 /* fitness section */
-.fitness-section{
+.fitness-section {
     display: grid;
     gap: 40px;
     text-align: center;
     grid-template-columns: repeat(4, 1fr);
 }
-.fitness>img{
+
+.fitness>img {
     border-radius: 50%;
     border: solid 5px rgba(255, 255, 255, 0.397);
 }
-.fitness-heading{
+
+.fitness-heading {
     font-weight: 600;
     font-size: 18px;
     color: #FFFFFF;
 }
+
+/* Run section */
+.run-text {
+    display: flex;
+    gap: 165px;
+    margin-top: 100px;
+    padding: 30px 50px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+
+}
+
+.run-section {
+    width: 45%;
+
+}
+
+.describtion {
+    padding: 20px;
+}
+
+.run-img {
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+.run-img img {
+    width: 100%;
+    /* width: 366px;
+    height: 312px; */
+    border-radius: 18px;
+
+}
+
+.runn-heading {
+    font-weight: 900;
+    font-size: 48px;
+    color: #FFFFFF;
+
+
+}
+
+/* Trainings and Exercises */
+.tranning {
+    width: 50%;
+    line-height: 120%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.tranning-head {
+    font-weight: 900;
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.tranning-describtion {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tranning-img {
+   display:flex;
+   
+
+}
+.tranning-img2 {
+    display: flex;
+ 
+ } 
+
+.img1 {
+    width: 25%;
+    height: 250px;
+    background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)), url('../images/exercise1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    width: 45%;
+    height: 250px;
+    background: linear-gradient(rgba(255, 0, 0, 0.3),rgba(255, 0, 0, 0.3)), url('../images/exercise2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.img3 {
+    width: 30%;
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/exercise3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   
+}
+
+.img4 {
+    width: 40%;
+    height: 250px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/exercise4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.img5 {
+    width: 25%;
+    height: 250px;
+    background: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3)),  url('../images/exercise5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.img6 {
+    width: 35%;
+    height: 250px;
+    background: linear-gradient(rgba(6, 255, 210, 0.5),rgba(6, 255, 210, 0.5)), url('../images/exercise6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 
 
 
@@ -226,24 +371,44 @@ nav {
 
 
 @media screen and (max-width: 576px) {
+
+    .all {
+        margin: 10px;
+    }
+
     .navbar>ul {
         display: none;
 
     }
 
+
     .menu-btn {
         display: unset;
     }
 
-    .banner {
+    .banner,
+    .run-text {
         flex-direction: column;
     }
 
-    .person, 
-    .banner-text, .habit-box {
+    .banner {
+        justify-content: center;
+    }
+
+    .banner-text {
+        margin: 10px;
+    }
+
+    .padings {
+        padding: 5px;
+    }
+
+    .person,
+    .banner-text,
+    .habit-box {
         width: 100%;
     }
-   
+
     .banner-head {
         font-size: 36px;
     }
@@ -255,36 +420,106 @@ nav {
 
     }
 
-    .image {
+    .common-describtion-color {
+        margin: 0px;
+    }
+
+    .image,
+    .run-img,
+    .run-section {
         width: 100%;
     }
-    .work-out{
+
+    .work-out {
         width: 136px;
         margin-left: 195px;
     }
-    .view{
+
+    .view {
         width: 136px;
         line-height: 20px;
-        margin-left: -20px;
+        margin-left: 30px;
     }
-    .later{
+
+    .later {
         letter-spacing: 0.56px;
         font-size: 9.83px;
     }
+
+    .change-habits {
+        font-size: 32px;
+    }
+
     .work-out-500,
     .view-350 {
         font-size: 25px;
-        
+
     }
-    .fitness-section{
-        grid-template-columns: repeat(1,1fr);
+
+    .fitness-section {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .common-describtion-color{
+
+    .fitness-describtion {
         margin: 30px;
     }
+
+    .runn-heading {
+        font-size: 36px;
+    }
+
+    /* run section */
+    .run-text {
+        gap: 30px;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .run-img {
+        justify-content: center;
+    }
+
+    .run-img img {
+        width: 100%;
+    }
+    /* Trainings and Exercises */
+    .tranning{
+        margin-top: 50px;
+    }
+    .tranning-head{
+        font-size: 32px;
+        line-height: 120%;
+    }
+    .img1 {
+        width: 50%;
+        height: 140px;
+        
+    }
     
+    .img2 {
+        width: 50%;
+        height: 140px;
+       
+    }
 
+    .img4 {
+        width: 45%;
+        height: 140px;
+        
+    }
+    
+    .img5 {
+        width: 55%;
+        height: 140px;
+    }
 
+    .img3{
+        display: none;
+
+    }
+    .img6{
+        display: none;
+    }
 
 
 }
