@@ -366,6 +366,7 @@
 .table {
     display: flex;
     justify-items: center;
+    background-color: rgb(34, 34, 34);
 }
 
 .table>div>table {
@@ -406,18 +407,20 @@ td {
 
 .input1 {
     width: 50%;
+    text-align: center;
 }
 
 .input-section {
     align-items: center;
+
 }
 
 .input-section>input {
     width: 282.5px;
     height: 48px;
-    
-    
-   padding-left: 10px;
+
+
+    padding-left: 10px;
     /* padding: 12px 60px 12px 20px; */
     margin-top: 10px;
     border-radius: 8px;
@@ -430,6 +433,131 @@ td {
     margin-bottom: 25px;
     padding-left: 10px;
     border-radius: 8px;
+
+}
+
+/* Meet our team */
+.img-team1 {
+
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/trainer1.png');
+    border-radius: 18px;
+    background-size: cover;
+
+}
+
+.img-team2 {
+
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/trainer2.png');
+    border-radius: 18px;
+    background-size: cover;
+}
+
+.img-team3 {
+
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/trainer3.png');
+    border-radius: 18px;
+    background-size: cover;
+}
+
+.img-team4 {
+
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/trainer4.png');
+    border-radius: 18px;
+    background-size: cover;
+}
+
+.img-team5 {
+
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/trainer5.png');
+    border-radius: 18px;
+    background-size: cover;
+}
+
+.img-team6 {
+    background-image: url('../images/trainer6.png');
+    width: 100%;
+    height: 272px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/trainer6.png');
+    border-radius: 18px;
+    background-size: cover;
+}
+
+.our-team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+
+}
+
+/* footer */
+.footer {
+    display: flex;
+    gap: 100px;
+    margin-top: 60px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+.footer-fitness {
+    width: 50%;
+
+    line-height: 120%;
+}
+
+.footer-head {
+    font-size: 70px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+}
+
+.footer-started {
+    width: 50%;
+
+}
+
+.footer-started {
+    display: flex;
+    gap: 150px;
+}
+
+.get-start {
+    font-size: 23px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.common-describtion {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.horijontal {
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: none;
+
+}
+
+.copy-right {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 50px;
+    display: none;
 }
 
 
@@ -443,10 +571,13 @@ td {
 
 @media screen and (max-width: 576px) {
 
-    .all {
-        margin: 10px;
-    }
+    /* .all {
+        margin: 20px;
+    } */
 
+    .navbar{
+        padding: 0px 20px;
+    }
     .navbar>ul {
         display: none;
 
@@ -456,6 +587,7 @@ td {
     .menu-btn {
         display: unset;
     }
+
 
     .banner,
     .run-text {
@@ -497,7 +629,7 @@ td {
 
     .image,
     .run-img,
-    .run-section {
+    .run-section,.tranning {
         width: 100%;
     }
 
@@ -543,24 +675,40 @@ td {
     .run-text {
         gap: 30px;
         margin-top: 50px;
-        padding: 10px;
+        padding: 20px;
     }
 
     .run-img {
         justify-content: center;
     }
 
-    .run-img img,.input1,.table1 {
+    .run-img img,
+    .input1,
+    .table1 {
         width: 100%;
     }
+    .table1{
+        justify-content: center;
+        padding-left: 12px;
+    }
+
+    td,
+    th {
+        padding: 10px;
+    }
+
 
     /* Trainings and Exercises */
     .tranning {
         margin-top: 50px;
+        padding:0px 20px;
+    }
+    .tranning-img-div{
+        padding: 0px 20px;
     }
 
     .tranning-head {
-        font-size: 32px;
+        font-size: 29px;
         line-height: 120%;
     }
 
@@ -595,18 +743,54 @@ td {
     .img6 {
         display: none;
     }
+
     /* table section */
-    .table{
+    .table {
         flex-direction: column;
     }
-    .input-section>input{
+
+    .input-section>input {
         width: 150px;
         height: 40px;
         border: none;
     }
+
     .activity-input {
         width: 311px;
         height: 40px;
+    }
+
+    .our-team {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+        padding: 20px;
+
+
+    }
+
+    /* .fitness-describtion {
+        margin: 2px;
+    } */
+
+    .footer-started {
+        gap: 10px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .horijontal {
+        display: block;
+    }
+
+    .copy-right {
+        display: block;
     }
 
 
